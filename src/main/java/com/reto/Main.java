@@ -19,6 +19,4 @@ public class Main {
 
         MovieUtils.writeMoviesIntoTemplate(sb, movies);
     }
-
-
 }
