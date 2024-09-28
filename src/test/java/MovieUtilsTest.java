@@ -43,7 +43,9 @@ public class MovieUtilsTest {
         }
 
         for(Movie movie : movies) {
-            Files.deleteIfExists(Path.of("src/main/output/" + movie.getTitle() + ".html"));
+            Files.deleteIfExists(Path.of("src/main/output/" + movie.getTitle() + "-" + movie.getId() +  ".html"));
         }
+        File dir = new File("src/main/output");
+        dir.delete();
     }
 }
